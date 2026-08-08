@@ -1,0 +1,8 @@
+OQMD | https://www.oqmd.org/ | 2024Q4 snapshot | CC-BY-4.0
+MatBench | https://github.com/materialsproject/matbench | v0.1 | MIT
+MatBench Discovery | https://github.com/janosh/matbench-discovery | v1 | MIT
+Materials Project API | https://materialsproject.github.io/api/ | 2024Q4 snapshot | CC-BY-4.0
+ChEMBL | https://www.ebi.ac.uk/chembl/ | current release | CC-BY-SA-3.0
+PubChem | https://pubchem.ncbi.nlm.nih.gov/ | current release | public domain
+OpenMM | https://openmm.org/ | 8.x | Apache-2.0
+

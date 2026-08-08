@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+artifacts/
+datasets/
+runs/
+*.onnx
+*.pt
+

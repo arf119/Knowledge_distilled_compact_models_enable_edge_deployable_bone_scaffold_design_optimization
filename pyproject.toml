@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools==75.1.0", "wheel==0.44.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "compact-scaffold"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["torch==2.4.1", "numpy==1.26.4", "pyyaml==6.0.2", "pydantic==2.9.2"]
+
+[project.optional-dependencies]
+quality = ["pytest==8.3.3", "ruff==0.6.9", "mypy==1.11.2"]
+
+[tool.setuptools.packages.find]
+include = ["compact_scaffold*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+packages = ["compact_scaffold"]
+

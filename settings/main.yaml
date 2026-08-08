@@ -1,0 +1,46 @@
+seed: 1
+data:
+  cutoff: 5.0
+  max_neighbors: 48
+  max_atoms: 100
+  batch_size: 64
+model:
+  atomic_features: 128
+  embedding_dim: 128
+  hidden_dim: 256
+  layers: 6
+  heads: 2
+  outputs: 24
+  dropout: 0.0
+loss:
+  alpha: 1.0
+  beta: 0.25
+  gamma: 1.0
+  temperature_initial: 4.0
+  temperature_final: 1.0
+  hap_exponent: 2.08
+  tcp_exponent: 1.95
+  glass_exponent: 1.82
+train:
+  epochs: 200
+  warmup_epochs: 40
+  full_precision_epoch: 100
+  learning_rate: 0.0003
+  weight_decay: 0.00001
+  gradient_clip: 1.0
+  precision: bf16
+  world_size: 4
+  gradient_accumulation: 1
+quantization:
+  fp16_budget: 0.30
+  bits: 8
+  per_channel: true
+  symmetric: true
+search:
+  population: 12
+  budget_seconds: 30.0
+  porosity_min: 0.30
+  porosity_max: 0.85
+  patience: 8
+  tolerance: 0.0001
+
